@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/Tuli%20College/Desktop/sentirenla/colony.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longli Lenten Ward, Tuli, Nagaland</title>
+    <!-- Google Fonts for professional typography -->
+    <link href="./Longli Lenten Ward, Tuli, Nagaland_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1b4332;
+            --primary-dark: #081c15;
+            --accent: #d4a373;
+            --bg-light: #f4f6f4;
+            --text-dark: #2b2d42;
+            --text-muted: #555b6e;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .brand-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-title {
+            font-size: 1.4rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .brand-subtitle {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(8, 28, 21, 0.65), rgba(27, 67, 50, 0.65)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: var(--white);
+            text-align: center;
+            padding: 8rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary-dark);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: #bc8a5b;
+            transform: translateY(-2px);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* Overview / Highlights Grid */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Gallery Section with Sub-menus/Filters */
+        .gallery-section {
+            background-color: var(--white);
+            padding: 5rem 0;
+        }
+
+        .filter-menu {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--bg-light);
+            border: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: var(--white);
+            padding: 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        footer p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive design */
+        @media(max-width: 768px) {
+            nav ul {
+                display: none; /* Can be enhanced with mobile toggle if needed */
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="brand-title">Longli Lenten Ward</span>
+                <span class="brand-subtitle">Tuli, Nagaland</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/Tuli%20College/Desktop/sentirenla/colony.html#home">Home</a></li>
+                    <li><a href="file:///C:/Users/Tuli%20College/Desktop/sentirenla/colony.html#about">About</a></li>
+                    <li><a href="file:///C:/Users/Tuli%20College/Desktop/sentirenla/colony.html#landmarks">Landmarks</a></li>
+                    <li><a href="file:///C:/Users/Tuli%20College/Desktop/sentirenla/colony.html#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Longli Lenten Ward</h1>
+        <p>A peaceful and vibrant community of approx. 500 households nestled in Tuli, Nagaland, blessed with natural beauty and strong community harmony.</p>
+        <a href="file:///C:/Users/Tuli%20College/Desktop/sentirenla/colony.html#about" class="btn">Explore Our Colony</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Our Ward</h2>
+        <p class="section-subtitle">Discover the heritage, geography, and vital establishments of Longli Lenten Ward.</p>
+        
+        <div class="highlights-grid">
+            <div class="card">
+                <h3>🏘️ Community Scale</h3>
+                <p>Home to approximately 500 tightly-knit households, fostering strong bonds, cultural preservation, and collective neighborhood growth.</p>
+            </div>
+            <div class="card">
+                <h3>🌊 Milak River</h3>
+                <p>Gracefully bordered by the pristine Milak River, offering scenic beauty, natural calm, and rich ecological value to our surroundings.</p>
+            </div>
+            <div class="card">
+                <h3>🏛️ Public Works Department (PWD)</h3>
+                <p>Host to the local PWD office facility, serving as a key administrative hub for infrastructure development in and around Tuli.</p>
+            </div>
+            <div class="card">
+                <h3>⛪ Local Church</h3>
+                <p>A spiritual anchor for our community where residents gather for worship, fellowship, unity, and communal moral guidance.</p>
+            </div>
+            <div class="card">
+                <h3>🌿 Rubber Farms</h3>
+                <p>Picturesque green rubber plantations contributing significantly to the local agrarian economy and sustainable livelihood.</p>
+            </div>
+            <div class="card">
+                <h3>🏡 Rest House</h3>
+                <p>A peaceful communal shelter and rest house providing hospitality and lodging for visitors, travelers, and guests.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section with Sub-menus / Filters -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">Photo Gallery</h2>
+        <p class="section-subtitle">Explore snapshots of our landscapes, institutions, and community life.</p>
+
+        <!-- Sub-menus / Filter Buttons -->
+        <div class="filter-menu">
+            <button class="filter-btn active" onclick="filterGallery('all')">All Photos</button>
+            <button class="filter-btn" onclick="filterGallery('nature')">Milak River &amp; Nature</button>
+            <button class="filter-btn" onclick="filterGallery('farms')">Rubber Farms</button>
+            <button class="filter-btn" onclick="filterGallery('institutions')">Offices &amp; Church</button>
+            <button class="filter-btn" onclick="filterGallery('community')">Community &amp; Rest House</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="./Longli Lenten Ward, Tuli, Nagaland_files/WhatsApp Image 2026-10-12 at 10.33.15 AM.jpeg" alt="Milak River View">
+                <div class="gallery-caption">Milak River Scenic View</div>
+            </div>
+            <div class="gallery-item" data-category="farms">
+                <img src="./Longli Lenten Ward, Tuli, Nagaland_files/WhatsApp Image 2026-10-12 at 10.33.16 AM (2).jpeg" alt="Rubber Farm">
+                <div class="gallery-caption">Lush Rubber Plantation</div>
+            </div>
+            <div class="gallery-item" data-category="institutions">
+                <img src="./Longli Lenten Ward, Tuli, Nagaland_files/WhatsApp Image 2026-10-12 at 10.33.16 AM (1).jpeg" alt="Church">
+                <div class="gallery-caption">Ward Church Fellowship</div>
+            </div>
+            <div class="gallery-item" data-category="institutions">
+                <img src="./Longli Lenten Ward, Tuli, Nagaland_files/WhatsApp Image 2026-10-12 at 10.33.17 AM.jpeg" alt="PWD Office">
+                <div class="gallery-caption">PWD Office Building</div>
+            </div>
+            <div class="gallery-item" data-category="community">
+                <img src="./Longli Lenten Ward, Tuli, Nagaland_files/WhatsApp Image 2026-10-12 at 10.33.16 AM.jpeg" alt="Rest House">
+                <div class="gallery-caption">Colony Rest House Shelter</div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="./Longli Lenten Ward, Tuli, Nagaland_files/photo-1511497584788-876761192569" alt="Greenery">
+                <div class="gallery-caption">Green Canopy around Tuli</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Longli Lenten Ward, Tuli, Nagaland. All Rights Reserved.</p>
+        <p style="margin-top: 0.55rem; font-size: 0.85rem; opacity: 0.6;">Proudly representing ~500 households of peace and progress.</p>
+    </footer>
+
+    <!-- Simple JavaScript for Gallery Filtering -->
+    <script>
+        function filterGallery(category) {
+            // Update active state on buttons
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter gallery items
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body></html>
